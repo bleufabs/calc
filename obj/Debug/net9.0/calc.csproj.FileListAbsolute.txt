@@ -1,0 +1,14 @@
+C:\Users\bleuf\BleuNPink\small projects\Calculator\calc\bin\Debug\net9.0\calc.exe
+C:\Users\bleuf\BleuNPink\small projects\Calculator\calc\bin\Debug\net9.0\calc.deps.json
+C:\Users\bleuf\BleuNPink\small projects\Calculator\calc\bin\Debug\net9.0\calc.runtimeconfig.json
+C:\Users\bleuf\BleuNPink\small projects\Calculator\calc\bin\Debug\net9.0\calc.dll
+C:\Users\bleuf\BleuNPink\small projects\Calculator\calc\bin\Debug\net9.0\calc.pdb
+C:\Users\bleuf\BleuNPink\small projects\Calculator\calc\obj\Debug\net9.0\calc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bleuf\BleuNPink\small projects\Calculator\calc\obj\Debug\net9.0\calc.AssemblyInfoInputs.cache
+C:\Users\bleuf\BleuNPink\small projects\Calculator\calc\obj\Debug\net9.0\calc.AssemblyInfo.cs
+C:\Users\bleuf\BleuNPink\small projects\Calculator\calc\obj\Debug\net9.0\calc.csproj.CoreCompileInputs.cache
+C:\Users\bleuf\BleuNPink\small projects\Calculator\calc\obj\Debug\net9.0\calc.dll
+C:\Users\bleuf\BleuNPink\small projects\Calculator\calc\obj\Debug\net9.0\refint\calc.dll
+C:\Users\bleuf\BleuNPink\small projects\Calculator\calc\obj\Debug\net9.0\calc.pdb
+C:\Users\bleuf\BleuNPink\small projects\Calculator\calc\obj\Debug\net9.0\calc.genruntimeconfig.cache
+C:\Users\bleuf\BleuNPink\small projects\Calculator\calc\obj\Debug\net9.0\ref\calc.dll
