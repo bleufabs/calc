@@ -4,48 +4,65 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Display the main menu
-        Console.WriteLine("Welcome to the Calculator Program!");
-        Console.WriteLine("Please choose an operation:");
-        Console.WriteLine("Select an option:");
-        Console.WriteLine("1. Add");
-        Console.WriteLine("2. Subtract");
-        Console.WriteLine("3. Multiply");
-        Console.WriteLine("4. Divide");
-        Console.Write("Quit: q \n");
-        string choice = Console.ReadLine()?.Trim().ToLower();
-        if (string.IsNullOrEmpty(choice))
+        bool isRunning = true;
+        // Check if the program is running
+        while (isRunning)
         {
-            Console.WriteLine("No choice entered. Exiting the program.");
-            return;
-        }
-        // Validate user input
-        if (choice != "1" && choice != "2" && choice != "3" && choice != "4" && choice != "q")
-        {
-            Console.WriteLine("Invalid choice. Please try again.");
-            return;
-        }
-        // Process user choice
-        switch (choice)
-        {
-            case "1":
-                Add();
-                break;
-            case "2":
-                Subtract();
-                break;
-            case "3":
-                Multiply();
-                break;
-            case "4":
-                Divide();
-                break;
-            case "q":
-                Console.WriteLine("Exiting the program.");
+            // Display the main menu
+            Console.WriteLine("Welcome to the Calculator Program!");
+            Console.WriteLine("Please choose an operation:");
+            Console.WriteLine("Select an option:");
+            Console.WriteLine("1. Add");
+            Console.WriteLine("2. Subtract");
+            Console.WriteLine("3. Multiply");
+            Console.WriteLine("4. Divide");
+            Console.Write("Quit: q \n");
+            string choice = (Console.ReadLine() ?? string.Empty).Trim().ToLower();
+            if (string.IsNullOrEmpty(choice))
+            {
+                Console.WriteLine("No choice entered. Exiting the program.");
                 return;
-            default:
+            }
+            // Validate user input
+            if (choice != "1" && choice != "2" && choice != "3" && choice != "4" && choice != "q")
+            {
                 Console.WriteLine("Invalid choice. Please try again.");
-                break;
+                return;
+            }
+            // Process user choice
+            switch (choice)
+            {
+                case "1":
+                    Add();
+                    break;
+                case "2":
+                    Subtract();
+                    break;
+                case "3":
+                    Multiply();
+                    break;
+                case "4":
+                    Divide();
+                    break;
+                case "q":
+                    Console.WriteLine("Exiting the program.");
+                    isRunning = false;
+                    return;
+                default:
+                    Console.WriteLine("Invalid choice. Please try again.");
+                    break;
+            }
+            // Ask if the user wants to continue
+            Console.Write("Do you want to perform another operation? (y/n): ");
+            string continueChoice = (Console.ReadLine() ?? string.Empty).Trim().ToLower();
+            if (continueChoice == "y")
+            {
+                isRunning = true;
+            }
+            else
+            {
+                isRunning = false;
+            }
         }
     }
 
