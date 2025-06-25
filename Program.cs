@@ -23,12 +23,6 @@ class Program
                 Console.WriteLine("No choice entered. Exiting the program.");
                 return;
             }
-            // Validate user input
-            if (choice != "1" && choice != "2" && choice != "3" && choice != "4" && choice != "q")
-            {
-                Console.WriteLine("Invalid choice. Please try again.");
-                return;
-            }
             // Process user choice
             switch (choice)
             {
