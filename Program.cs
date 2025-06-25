@@ -18,11 +18,7 @@ class Program
             Console.WriteLine("4. Divide");
             Console.Write("Quit: q \n");
             string choice = (Console.ReadLine() ?? string.Empty).Trim().ToLower();
-            if (string.IsNullOrEmpty(choice))
-            {
-                Console.WriteLine("No choice entered. Exiting the program.");
-                return;
-            }
+            
             // Process user choice
             switch (choice)
             {
@@ -45,17 +41,6 @@ class Program
                 default:
                     Console.WriteLine("Invalid choice. Please try again.");
                     break;
-            }
-            // Ask if the user wants to continue
-            Console.Write("Do you want to perform another operation? (y/n): ");
-            string continueChoice = (Console.ReadLine() ?? string.Empty).Trim().ToLower();
-            if (continueChoice == "y")
-            {
-                isRunning = true;
-            }
-            else
-            {
-                isRunning = false;
             }
         }
     }
